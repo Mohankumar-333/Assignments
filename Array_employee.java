@@ -13,26 +13,27 @@ class Array_employee
 		for(int n=0; n<employees; n++)
 		{
 			System.out.println("Enter the name of the employee " + (n+1));
-			names[n]=scan.nextLine();
-			scan.next();
+			names[n]=scan.next();	
 		}
-		System.out.println(names[1]);
-
+		
 		for(int id=0; id<employees; id++)
 		{
 			System.out.println("Enter employee " + (id+1)+ " ID" );
 			emp_id[id]=scan.nextInt();
 		}
+
 		for(int sal=0; sal<employees; sal++)
 		{
 			System.out.println("Enter employee " + (sal+1) +" salary");
 			emp_sal[sal]=scan.nextInt();
 		}
-		        System.out.println();
-				System.out.println("Displaying the employee details stored");
-				System.out.println();
-				System.out.println("Displaying all employees names");
-				System.out.print("[");
+
+
+		    System.out.println();
+			System.out.println("Displaying the employee details stored");
+			System.out.println();
+			System.out.println("Displaying all employees names");
+			System.out.print("[");
 		for(int i=0; i<employees;i++)
 			{
 			System.out.print(names[i]);
@@ -45,7 +46,7 @@ class Array_employee
 		}
 		System.out.println();
 		System.out.println("Displaying all employees Id's");
-				System.out.print("[");
+		System.out.print("[");
 		for(int i=0; i<employees;i++)
 			{
 			System.out.print(emp_id[i]);
@@ -58,7 +59,7 @@ class Array_employee
 		}
 		System.out.println();
 		System.out.println("Displaying all employee salaries");
-				System.out.print("[");
+		System.out.print("[");
 		for(int i=0; i<employees;i++)
 			{
 			System.out.print(emp_sal[i]);
@@ -83,6 +84,11 @@ class Array_employee
 				System.out.println("Employee Salary " + emp_sal[i]);
 				
 			}
+			else
+			{
+				System.out.println("No Emplyee has salary above 15000");
+			}
+
 		}
 	}
 }
